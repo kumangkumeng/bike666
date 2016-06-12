@@ -17,6 +17,12 @@ app.use('/banners', banners);
 var user = require("./Controller/user");
 app.use('/user', user);
 
+var news = require("./Controller/news");
+app.use('/news', news);
+
+var events = require("./Controller/events");
+app.use('/events', events);
+
 app.get('/upload', function(req, res) {
   res.sendFile(__dirname + "/uploadForm.html");
 });
