@@ -4,7 +4,7 @@
   "description": "Tes KP Cooy",
   "main": "main.js",
   "scripts": {
-    "test": "testthisshit"
+    "start" : "node main.js"
   },
   "keywords": [
     "kp"

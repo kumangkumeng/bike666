@@ -21,6 +21,10 @@ app.get('/upload', function(req, res) {
   res.sendFile(__dirname + "/uploadForm.html");
 });
 
+app.get('/', function(req, res) {
+  res.json(['ngapain bro']);
+});
+
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var mongourl = 'mongodb://admin:admin@ds025973.mlab.com:25973/bikeantik';
