@@ -1,0 +1,14 @@
+{
+  "name": "bike_antik",
+  "version": "0.0.0",
+  "description": "Tes KP Cooy",
+  "main": "main.js",
+  "scripts": {
+    "test": "testthisshit"
+  },
+  "keywords": [
+    "kp"
+  ],
+  "author": "kumangkumeng",
+  "license": "ISC"
+}
