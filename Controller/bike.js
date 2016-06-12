@@ -18,8 +18,26 @@ bikeRouter.use(function (req, res, next) {
 
 bikeRouter.get('/', function (req, res) {
   console.log(req.isAdmin);
-  db.get().collection("bikes").find().toArray(function (err, bikes) {
+  console.log(req.query);
+
+  var query = {};
+  if (req.query.category)
+  {
+    query = {
+      'categories' : {$in : [req.query.category]}
+    };
+  }
+
+  db.get().collection("bikes").find(query).toArray(function (err, bikes) {
     responseMaker.StandardSuccess(res, bikes, '');
+  });
+});
+
+bikeRouter.get('/:id', function (req, res) {
+  console.log(req.isAdmin);
+  var id = req.params.id;
+  db.get().collection("bikes").findOne({'_id' : db.createID(id)}, function (err, item) {
+    responseMaker.StandardSuccess(res, item, '');
   });
 });
 

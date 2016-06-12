@@ -5,6 +5,8 @@ var constant = require("../constant");
 var bodyParser = require("body-parser");
 userRouter.use(bodyParser.json());
 
+var responseMaker = require("./responseMaker");
+
 var db = require("../db");
 
 var auth = require("./auth");
@@ -22,17 +24,15 @@ userRouter.post('/auth', function (req, res) {
       auth.Create(first, function(err, token) {
         if (token)
         {
-          res.json({'data' : {'user' : first, 'token' : token}});
+          responseMaker.StandardSuccess(res, {'user' : first, 'token' : token}, '');
         } else
         {
-          res.status(500);
-          res.json({'message' : 'server failed', 'error' : err});
+          responseMaker.StandardError(res, 500, constant.serverFailure);
         }
       });
     } else
     {
-      res.status(404);
-      res.json({'message' : 'user not found'});
+      responseMaker.StandardError(res, 404, 'user not found');
     }
   });
 });

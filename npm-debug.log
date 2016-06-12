@@ -11,36 +11,37 @@
 8 verbose lifecycle bike_antik@0.0.0~start: unsafe-perm in lifecycle true
 9 verbose lifecycle bike_antik@0.0.0~start: PATH: /Users/rahadiankumang/.nvm/versions/node/v5.1.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/rahadiankumang/Codes/GITS/bike666/node_modules/.bin:/Users/rahadiankumang/.nvm/versions/node/v5.1.0/bin:/Users/rahadiankumang/.nvm/versions/node/v5.1.0/bin:/Users/rahadiankumang/Documents/GITS/Cocos2d-x/android-ndk-r10d:/Users/rahadiankumang/Documents/GITS/Cocos2d-x/apache-ant-1.9.4/bin:/Users/rahadiankumang/Library/Android/sdk/tools:/Users/rahadiankumang/Library/Android/sdk/platform-tools:/Users/rahadiankumang/Library/Android/sdk:/Users/rahadiankumang/Documents/GITS/Cocos2d-x/cocos2d-x-3.3/templates:/Users/rahadiankumang/Documents/GITS/Cocos2d-x/cocos2d-x-3.3:/Users/rahadiankumang/Documents/GITS/Cocos2d-x/cocos2d-x-3.3/tools/cocos2d-console/bin:/usr/local/bin:/Volumes/KUMANG2A/rahadiankumang/.composer/vendor/bin/:/usr/bin:/usr/sbin:/bin:/sbin
 10 verbose lifecycle bike_antik@0.0.0~start: CWD: /Users/rahadiankumang/Codes/GITS/bike666
-11 silly lifecycle bike_antik@0.0.0~start: Args: [ '-c', 'main.js' ]
-12 info lifecycle bike_antik@0.0.0~start: Failed to exec start script
-13 verbose stack Error: bike_antik@0.0.0 start: `main.js`
-13 verbose stack spawn ENOENT
-13 verbose stack     at ChildProcess.<anonymous> (/Users/rahadiankumang/.nvm/versions/node/v5.1.0/lib/node_modules/npm/lib/utils/spawn.js:17:16)
-13 verbose stack     at emitTwo (events.js:87:13)
-13 verbose stack     at ChildProcess.emit (events.js:172:7)
-13 verbose stack     at maybeClose (internal/child_process.js:818:16)
-13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-14 verbose pkgid bike_antik@0.0.0
-15 verbose cwd /Users/rahadiankumang/Codes/GITS/bike666
-16 error Darwin 15.4.0
-17 error argv "/Users/rahadiankumang/.nvm/versions/node/v5.1.0/bin/node" "/Users/rahadiankumang/.nvm/versions/node/v5.1.0/bin/npm" "start"
-18 error node v5.1.0
-19 error npm  v3.9.5
-20 error file sh
+11 silly lifecycle bike_antik@0.0.0~start: Args: [ '-c', 'node main.js' ]
+12 silly lifecycle bike_antik@0.0.0~start: Returned: code: 1  signal: null
+13 info lifecycle bike_antik@0.0.0~start: Failed to exec start script
+14 verbose stack Error: bike_antik@0.0.0 start: `node main.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/rahadiankumang/.nvm/versions/node/v5.1.0/lib/node_modules/npm/lib/utils/lifecycle.js:245:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/rahadiankumang/.nvm/versions/node/v5.1.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid bike_antik@0.0.0
+16 verbose cwd /Users/rahadiankumang/Codes/GITS/bike666
+17 error Darwin 15.4.0
+18 error argv "/Users/rahadiankumang/.nvm/versions/node/v5.1.0/bin/node" "/Users/rahadiankumang/.nvm/versions/node/v5.1.0/bin/npm" "start"
+19 error node v5.1.0
+20 error npm  v3.9.5
 21 error code ELIFECYCLE
-22 error errno ENOENT
-23 error syscall spawn
-24 error bike_antik@0.0.0 start: `main.js`
-24 error spawn ENOENT
-25 error Failed at the bike_antik@0.0.0 start script 'main.js'.
-25 error Make sure you have the latest version of node.js and npm installed.
-25 error If you do, this is most likely a problem with the bike_antik package,
-25 error not with npm itself.
-25 error Tell the author that this fails on your system:
-25 error     main.js
-25 error You can get information on how to open an issue for this project with:
-25 error     npm bugs bike_antik
-25 error Or if that isn't available, you can get their info via:
-25 error     npm owner ls bike_antik
-25 error There is likely additional logging output above.
-26 verbose exit [ 1, true ]
+22 error bike_antik@0.0.0 start: `node main.js`
+22 error Exit status 1
+23 error Failed at the bike_antik@0.0.0 start script 'node main.js'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the bike_antik package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node main.js
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs bike_antik
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls bike_antik
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

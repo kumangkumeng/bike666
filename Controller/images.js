@@ -60,7 +60,7 @@ imageRouter.post('/', function (request, response) {
   upload(request,response,function(err) {
     if(err) {
         console.log(err);
-        responseMaker.StandardError(res, 500, 'error uploading file');
+        responseMaker.StandardError(response, 500, 'error uploading file');
         return
     }
 
@@ -74,10 +74,10 @@ imageRouter.post('/', function (request, response) {
       if (err)
       {
         console.log(err);
-        responseMaker.StandardError(res, 500, constant.serverFailure);
+        responseMaker.StandardError(response, 500, constant.serverFailure);
       } else
       {
-        responseMaker.StandardSuccess(res, res.ops, '');
+        responseMaker.StandardSuccess(response, res.ops, '');
       }
     });
   });
