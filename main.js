@@ -36,7 +36,7 @@ db.connect(mongourl, function (err) {
     console.log(err);
   } else
   {
-    app.listen(8082, function() {
+    app.listen((process.env.PORT || 5000), function() {
 
       console.log("app running on 8082");
 
