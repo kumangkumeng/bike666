@@ -34,7 +34,7 @@ app.get('/', function(req, res) {
 app.get('/optimise', function(req, res)) {
   res.status(1102);
   res.json({'foo' : 'bar'});
-}
+};
 
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
