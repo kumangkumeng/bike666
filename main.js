@@ -31,6 +31,11 @@ app.get('/', function(req, res) {
   res.json(['ngapain bro']);
 });
 
+app.get('/optimise', function(req, res)) {
+  res.status(1102);
+  res.json({'foo' : 'bar'});
+}
+
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var mongourl = 'mongodb://admin:admin@ds025973.mlab.com:25973/bikeantik';
